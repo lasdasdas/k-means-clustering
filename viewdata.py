@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import re
 import numpy
 import sys
-filename="hi.txt"
-kclusters=10
+filename="file.txt"#Default
+kclusters=10#Default
 # Parsing the flags
 if (sys.argv[1]=="-h" or sys.argv[1]=="--help"):
     print("First argument is the data file second one is the cluster number")
@@ -44,8 +44,8 @@ for n in range(kclusters):
     z =clusterlist[n][2]
     ax.scatter(x, y, z, c=numpy.random.rand(3,), marker='o')
 
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
 
 plt.show()
