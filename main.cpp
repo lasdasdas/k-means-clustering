@@ -8,8 +8,8 @@
 #include <vector>
 #include <array>
 //Parameters
-int  cloudlen=30000;
-float kmean=100;
+int  cloudlen=3000;
+int kmean=30;
 int iterations=200;
 
 struct kcluster{
